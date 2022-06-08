@@ -220,7 +220,7 @@ class Interface(tk.Frame):
             url = "http://api.travelpayouts.com/v2/prices/latest"
             parameters = {"origin": self.depart_city, "destination": self.arriv_city, "depart_date": self.depart_date,
                           "return_date": self.arriv_date}
-            headers = {'x-access-token': 'e47eba8aafb92a54b29650df1411124c'}
+            headers = {'x-access-token': ''}
             response = requests.request("GET", url, headers=headers, params=parameters)
             d = response.json()
             ld = d["data"]
